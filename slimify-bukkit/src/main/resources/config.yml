@@ -1,0 +1,8 @@
+convert-on-startup: true
+output-folder: slime_worlds
+match:
+  - world
+on-conflict: SKIP
+limits:
+  max-chunks: 0
+  max-size-mb: 0

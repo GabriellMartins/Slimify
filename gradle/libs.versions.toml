@@ -1,0 +1,17 @@
+[versions]
+lombok = "1.18.48"
+junit = "6.0.0"
+shadow = "9.6.1"
+paper = "1.8.8-R0.1-SNAPSHOT"
+swm = "2.2.1"
+
+[libraries]
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+paper-api = { module = "org.github.paperspigot:paperspigot-api", version.ref = "paper" }
+swm-importer = { module = "com.grinderwolf:slimeworldmanager-importer", version.ref = "swm" }
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }

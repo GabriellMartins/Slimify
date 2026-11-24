@@ -1,0 +1,36 @@
+name: Slimify
+main: com.gabrielmartins.slimify.bukkit.SlimifyPlugin
+version: ${version}
+load: STARTUP
+author: Gabriel Martins
+description: Converts every world folder to the Slime format on server start
+
+commands:
+  slimify:
+    description: Slimify commands
+    usage: /<command>
+    aliases: [slime]
+
+permissions:
+  slimify.*:
+    description: All Slimify permissions
+    default: op
+    children:
+      slimify.command.convert: true
+      slimify.command.convertall: true
+      slimify.command.list: true
+      slimify.command.info: true
+      slimify.command.delete: true
+      slimify.command.reload: true
+  slimify.command.convert:
+    default: op
+  slimify.command.convertall:
+    default: op
+  slimify.command.list:
+    default: op
+  slimify.command.info:
+    default: op
+  slimify.command.delete:
+    default: op
+  slimify.command.reload:
+    default: op
